@@ -17,10 +17,44 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  gap: 20px;
 }
 
 input {
   display: none;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+nav label {
+  display: block;
+  width: 14px;
+  height: 14px;
+  border: solid 2px #5656dd;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+nav label:hover {
+  background-color: #fff;
+}
+
+section {
+  height: 100%;
+  transition-delay: .5s;
+}
+
+section img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+h2 {
+  font-size: 36px;
+  color: #fff;
+}
