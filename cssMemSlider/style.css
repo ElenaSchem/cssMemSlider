@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Macondo', cursive;
+  background-color: #1d1e22;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+input {
+  display: none;
+}
+
