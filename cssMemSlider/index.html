@@ -9,40 +9,49 @@
   <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="slider">
-    <input type="radio" name="slide" id="section1" checked>
-    <input type="radio" name="slide" id="section2">
-    <input type="radio" name="slide" id="section3">
-    <input type="radio" name="slide" id="section4">
+  <div class="container">
+    <input type="radio" name="slide" id="slide1" checked>
+    <input type="radio" name="slide" id="slide2">
+    <input type="radio" name="slide" id="slide3">
+    <input type="radio" name="slide" id="slide4">
+
+    <div class="img-container">
+      <div class="slider-img">
+          <img id="slide-img1" src="assets/1-1.png" alt="1">
+          <img id="slide-img2" src="assets/2-1.jpg" alt="2">
+          <img id="slide-img3" src="assets/3.jpg" alt="3">
+          <img id="slide-img4" src="assets/4-1.png" alt="4">
+      </div>
+    </div>
+    
+    <div class="text-container">
+      <div class="slider-text">
+          <h2 id="slide-text1">Доктор Ливси</h2>
+          <h2 id="slide-text2">Уилл Смит бьет Криса Рока</h2>
+          <h2 id="slide-text3">Первое свидание</h2>
+          <h2 id="slide-text4">Что в коробке?</h2>
+      </div>
+    </div>
 
     <nav>
-      <label for="section1"></label>
-      <label for="section2"></label>
-      <label for="section3"></label>
-      <label for="section4"></label>
+      <label for="slide1">
+        <span class="nav-btn"></span>
+      </label>
+      <label for="slide2">
+        <span class="nav-btn"></span>
+      </label>
+      <label for="slide3">
+        <span class="nav-btn"></span>
+      </label>
+      <label for="slide4">
+        <span class="nav-btn"></span>
+      </label>
     </nav>
 
-    <section>
-      <img src="assets/1-1.png" alt="1">
-      <h2>Доктор Ливси</h2>
-    </section>
-    <section>
-      <img src="assets/2-1.jpg" alt="2">
-      <h2>Уилл Смит бьет Криса Рока</h2>
-    </section>
-    <section>
-      <img src="assets/3.jpg" alt="3">
-      <h2>Первое свидание</h2>
-    </section>
-    <section>
-      <img src="assets/4-1.png" alt="4">
-      <h2>Что в коробке?</h2>
-    </section>
   </div>
-
-  <!-- <div class="cover"></div> -->
+  
 </body>
 </html>
