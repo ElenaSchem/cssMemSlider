@@ -17,6 +17,7 @@ body {
   padding: 2rem;
   display: flex;
   flex-wrap: wrap;
+  gap: 2rem;
 }
 
 input {
@@ -25,7 +26,6 @@ input {
 
 .img-container {
   width: 100%;
-  margin-bottom: 2rem;
   border-radius: 2rem;
   overflow: hidden;
 }
@@ -110,3 +110,21 @@ h2 {
   transform: translateX(-300%);
 }
 
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .img-container {
+    margin-bottom: 0;
+  }
+
+  .text-container {
+    width: 100%;
+    order: 1;
+    margin-right: 0;
+    flex-grow: 0;
+  }
+}
