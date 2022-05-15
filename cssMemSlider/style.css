@@ -89,3 +89,24 @@ h2 {
   letter-spacing: .3rem;
 }
 
+
+#slide1:checked ~ nav label[for=slide1] nav-btn, #slide2:checked ~ nav label[for=slide2] nav-btn, #slide3:checked ~ nav label[for=slide3] nav-btn, #slide4:checked ~ nav label[for=slide4] nav-btn {
+  background-color: #fff;
+}
+
+#slide1:checked ~ .img-container .slider-img, #slide1:checked ~ .text-container .slider-text {
+  transform: translateX(0%);
+}
+
+#slide2:checked ~ .img-container .slider-img, #slide2:checked ~ .text-container .slider-text {
+  transform: translateX(-100%);
+}
+
+#slide3:checked ~ .img-container .slider-img, #slide3:checked ~ .text-container .slider-text {
+  transform: translateX(-200%);
+}
+
+#slide4:checked ~ .img-container .slider-img, #slide4:checked ~ .text-container .slider-text {
+  transform: translateX(-300%);
+}
+
