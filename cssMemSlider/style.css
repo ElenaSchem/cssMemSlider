@@ -60,18 +60,22 @@ nav label:active {
   display: inline-block;
   width: 1rem;
   height: 1rem;
-  border: solid 2px #5656dd;
+  border: solid .125rem #5656dd;
   border-radius: 50%;
 }
 
-.nav-btn:hover {
+nav label:hover .nav-btn {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+nav label:focus .nav-btn {
   background-color: #fff;
   border-color: #fff;
 }
 
 .text-container {
   width: 50%;
-  margin-right: 1rem;
   overflow: hidden;
   flex-grow: 1;
 }
@@ -86,7 +90,7 @@ h2 {
   min-width: 100%;
   font-size: 1.5rem;
   color: #fff;
-  letter-spacing: .3rem;
+  letter-spacing: .16rem;
 }
 
 
@@ -112,7 +116,7 @@ h2 {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 568px) {
   .container {
     padding: 1rem;
     justify-content: center;
