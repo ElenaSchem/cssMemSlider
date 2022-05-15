@@ -90,8 +90,9 @@ h2 {
 }
 
 
-#slide1:checked ~ nav label[for=slide1] nav-btn, #slide2:checked ~ nav label[for=slide2] nav-btn, #slide3:checked ~ nav label[for=slide3] nav-btn, #slide4:checked ~ nav label[for=slide4] nav-btn {
+#slide1:checked ~ nav label[for=slide1] .nav-btn, #slide2:checked ~ nav label[for=slide2] .nav-btn, #slide3:checked ~ nav label[for=slide3] .nav-btn, #slide4:checked ~ nav label[for=slide4] .nav-btn {
   background-color: #fff;
+  border-color: #fff;
 }
 
 #slide1:checked ~ .img-container .slider-img, #slide1:checked ~ .text-container .slider-text {
@@ -109,6 +110,7 @@ h2 {
 #slide4:checked ~ .img-container .slider-img, #slide4:checked ~ .text-container .slider-text {
   transform: translateX(-300%);
 }
+
 
 @media (max-width: 768px) {
   .container {
