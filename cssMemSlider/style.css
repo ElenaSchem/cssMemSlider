@@ -46,7 +46,7 @@ nav label {
   display: block;
   padding: 1rem;
   cursor: pointer;
-  transition: transfrom .3s ease;
+  transition: transform .3s ease;
 }
 
 nav label:active {
@@ -79,7 +79,7 @@ nav label:focus .nav-btn {
 
 .slider-text {
   display: flex;
-  transition: transfrom .3s ease;
+  transition: transform .3s ease;
 }
 
 h2 {
