@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+  background-color: #1d1e22;
+  margin: auto;
+}
+
+.container {
+  padding: 2rem 6rem;
+  max-width: 40rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+input {
+  display: none;
+}
+
+.img-container {
+  width: 100%;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.slider-img {
+  width: 100%;
+  display: flex;
+  transition: transform .3s ease;
+}
+
+.slider-img img {
+  width: 100%;
+  min-width: 100%;
+}
+
+nav {
+  display: flex;
+}
+
+nav label {
+  display: block;
+  padding: 1rem;
+  cursor: pointer;
+  transition: transform .3s ease;
+}
+
+nav label:active {
+  transform: scale(1.1);
+}
+
+.nav-btn {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border: solid .125rem #5656dd;
+  border-radius: 50%;
+}
+
+nav label:hover .nav-btn {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+nav label:focus .nav-btn {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.text-container {
+  width: 50%;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+.slider-text {
+  display: flex;
+  transition: transform .3s ease;
+}
+
+h2 {
+  width: 100%;
+  min-width: 100%;
+  font-size: 1.5rem;
+  color: #fff;
+  letter-spacing: .16rem;
+}
+
+
+#slide1:checked ~ nav label[for=slide1] .nav-btn, #slide2:checked ~ nav label[for=slide2] .nav-btn, #slide3:checked ~ nav label[for=slide3] .nav-btn, #slide4:checked ~ nav label[for=slide4] .nav-btn {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+#slide1:checked ~ .img-container .slider-img, #slide1:checked ~ .text-container .slider-text {
+  transform: translateX(0%);
+}
+
+#slide2:checked ~ .img-container .slider-img, #slide2:checked ~ .text-container .slider-text {
+  transform: translateX(-100%);
+}
+
+#slide3:checked ~ .img-container .slider-img, #slide3:checked ~ .text-container .slider-text {
+  transform: translateX(-200%);
+}
+
+#slide4:checked ~ .img-container .slider-img, #slide4:checked ~ .text-container .slider-text {
+  transform: translateX(-300%);
+}
+
+
+@media (max-width: 568px) {
+  .container {
+    padding: 1rem;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .img-container {
+    margin-bottom: 0;
+  }
+
+  .text-container {
+    width: 100%;
+    order: 1;
+    margin-right: 0;
+    flex-grow: 0;
+  }
+}
